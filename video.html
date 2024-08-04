@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/pico.css">
+    <title>Video</title>
+</head>
+<body class="container">
+    <div id="tnb"></div>
+        <div class="parent">
+            <div class="div1">
+                <div id="toc"></div>
+            </div>
+            <div class="div2">
+                <h2 id="video-embed">Video Embed</h2>
+<h3>Video Example from external source</h3>
+<p><iframe width="560" height="315" src="https://www.youtube.com/embed/WNidVyCofR8" title="" frameBorder="0"   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"  allowFullScreen><br></iframe></p>
+
+<h3>Video Example from local</h3>
+<video width="560" height="315" src="assets/stickman.mp4" controls> Stickman </video>
+<h3 id="iframe-tag">iframe Tag</h3>
+<p>website inside website</p>
+<pre><code class="lang-html">&lt;<span class="hljs-selector-tag">iframe</span> src=<span class="hljs-string">"link"</span>&gt;
+</code></pre>
+<p>Implement </p>
+<pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">iframe</span>
+        <span class="hljs-attr">width</span>=<span class="hljs-string">"424"</span>
+        <span class="hljs-attr">height</span>=<span class="hljs-string">"238"</span>
+        <span class="hljs-attr">src</span>=<span class="hljs-string">"https://www.youtube.com/embed/q933Vpo-Naw"</span>
+        <span class="hljs-attr">title</span>=<span class="hljs-string">"YouTube video player"</span>
+        <span class="hljs-attr">frameborder</span>=<span class="hljs-string">"0"</span>
+        <span class="hljs-attr">allow</span>=<span class="hljs-string">"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"</span>
+        <span class="hljs-attr">allowfullscreen</span>
+&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">iframe</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<h3 id="video-tag">Video Tag</h3>
+<p>The <code>&lt;video&gt;</code> tag is used to embed video content in a document, such as a movie clip or other video streams.</p>
+<p>The <code>&lt;video&gt;</code> tag contains one or more <source> tags with different video sources. The browser will choose the first source it supports.</p>
+<p>The text between the <code>&lt;video&gt;</code> and <code>&lt;/video&gt;</code> tags will only be displayed in browsers that do not support the <code>&lt;video&gt;</code> element.</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">video</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"myVid.mp4"</span>&gt;</span> My Video <span class="hljs-tag">&lt;/<span class="hljs-name">video</span>&gt;</span>
+</code></pre>
+<p><strong>Attributes</strong></p>
+<ul>
+<li>controls</li>
+<li>height</li>
+<li>width</li>
+<li>loop</li>
+<li>autoplay</li>
+</ul>
+<p>Implement</p>
+<pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">video</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"560"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"315"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"/myVideo.mov"</span> <span class="hljs-attr">controls</span>&gt;</span> my video
+  <span class="hljs-comment">&lt;!-- &lt;video width="560" height="315" src="/myVideo.mov" autoplay&gt; my video --&gt;</span>
+  <span class="hljs-comment">&lt;!-- &lt;video width="560" height="315" src="/myVideo.mov" loop&gt; my video --&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">video</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+
+            </div>
+    </div>
+<script src="js/script.js"></script>
+</body>
+</html>

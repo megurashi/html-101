@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/pico.css">
+    <title>Form</title>
+</head>
+<body class="container">
+    <div id="tnb"></div>
+        <div class="parent">
+            <div class="div1">
+                <div id="toc"></div>
+            </div>
+            <div class="div2">
+                <h2 id="form-in-html">Form in HTML</h2>
+<p><strong>Forms are used to collect data from the user</strong></p>
+<p><strong>Eg- sign up/login/help requests/contact me</strong></p>
+<pre><code class="lang-html">&lt;<span class="hljs-keyword">form</span>&gt;
+<span class="hljs-keyword">form</span> content
+&lt;/<span class="hljs-keyword">form</span>&gt;
+</code></pre>
+<p>Implement</p>
+<pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Text input fields<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">form</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"fname"</span>&gt;</span>First name:<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"fname"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"fname"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"John"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"lname"</span>&gt;</span>Last name:<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"lname"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"lname"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"Doe"</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Note that the form itself is not visible.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Also note that the default width of text input fields is 20 characters.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<article>
+  <header>Form Example</header>
+  <form>
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" value="John"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname" value="Doe">
+    <input type="submit" value="Submit">
+  </form>
+</article>
+<p align="center">
+        <img src="https://github.com/Subham-Maity/html-tutorial-for-beginners/blob/master/5.Images(ignore)/33.png?raw=true"/>
+        </p>
+
+
+<h3 id="action-in-form">Action in Form</h3>
+<p>Action attribute is used to define what action needs to be
+performed when a form is submitted</p>
+<pre><code class="lang-html">&lt;<span class="hljs-selector-tag">form</span> action=<span class="hljs-string">"/action.php"</span> &gt;
+</code></pre>
+<h3 id="form-element-input">Form Element : Input</h3>
+<p>Taking input from user and placeholder means what will be written down already in that blank space</p>
+<pre><code class="lang-html">&lt;input <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"text"</span> placeholder=<span class="hljs-string">"Enter Name"</span>&gt;
+</code></pre>
+<h3 id="label">LABEL</h3>
+<p>Screen reader users (will read out loud the label, when the user is focused on the element)
+Users who have difficulty clicking on very small regions (such as checkboxes) - because when a user clicks the text within the <label> element, it toggles the input (this increases the hit area).</p>
+<pre><code class="lang-html">&lt;<span class="hljs-keyword">input</span> <span class="hljs-keyword">type</span>=<span class="hljs-string">"radio"</span> value=<span class="hljs-string">"class X"</span> name=<span class="hljs-string">"class"</span> id=<span class="hljs-string">"id1"</span>&gt;
+&lt;<span class="hljs-keyword">label</span> <span class="hljs-keyword">for</span>=<span class="hljs-string">"id1"</span>&gt;
+&lt;/<span class="hljs-keyword">label</span>&gt;
+&lt;<span class="hljs-keyword">input</span> <span class="hljs-keyword">type</span>=<span class="hljs-string">"radio"</span> value=<span class="hljs-string">"class X"</span> name=<span class="hljs-string">"class"</span> id=<span class="hljs-string">"id2"</span>&gt;
+&lt;<span class="hljs-keyword">label</span> <span class="hljs-keyword">for</span>=<span class="hljs-string">"id2"</span>&gt;
+&lt;/<span class="hljs-keyword">label</span>&gt;
+</code></pre>
+<h3 id="radio-button">Radio Button</h3>
+<p>Radio buttons let a user select only one of a limited number of choices:</p>
+<pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Display Radio Buttons<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">action</span>=<span class="hljs-string">"/action_page.php"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Please select your favorite Web language:<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"radio"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"html"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"fav_language"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"HTML"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"html"</span>&gt;</span>HTML<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"radio"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"css"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"fav_language"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"CSS"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"css"</span>&gt;</span>CSS<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"radio"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"javascript"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"fav_language"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"JavaScript"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"javascript"</span>&gt;</span>JavaScript<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Please select your age:<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"radio"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"age1"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"age"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"30"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"age1"</span>&gt;</span>0 - 30<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"radio"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"age2"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"age"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"60"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"age2"</span>&gt;</span>31 - 60<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"radio"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"age3"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"age"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"100"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"age3"</span>&gt;</span>61 - 100<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"submit"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"Submit"</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<h3 id="class-id">Class &amp; Id</h3>
+<p>The HTML class attribute is used to specify a class for an HTML element.
+A class name can be used by multiple HTML elements, while an id name must only be used by one HTML element within the page:</p>
+<pre><code class="lang-html">&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">id</span>=<span class="hljs-string">"id1"</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"group1"</span>&gt;
+&lt;/<span class="hljs-keyword">div</span>&gt;
+
+
+&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">id</span>=<span class="hljs-string">"id2"</span>&gt; <span class="hljs-built_in">class</span>=<span class="hljs-string">"group1"</span>&gt;
+&lt;/<span class="hljs-keyword">div</span>&gt;
+</code></pre>
+<h3 id="checkbox">Checkbox</h3>
+<p>Let the user select one or more options of a limited number of choices:</p>
+<pre><code class="lang-html">
+&lt;<span class="hljs-keyword">label</span> <span class="hljs-keyword">for</span>=<span class="hljs-string">"id1"</span>&gt;
+  &lt;<span class="hljs-keyword">input</span> <span class="hljs-keyword">type</span>=<span class="hljs-string">"checkbox"</span> value=<span class="hljs-string">"class X"</span> name=<span class="hljs-string">"class"</span> id=<span class="hljs-string">"id2"</span>&gt;
+&lt;/<span class="hljs-keyword">label</span>&gt;
+&lt;<span class="hljs-keyword">label</span> <span class="hljs-keyword">for</span>=<span class="hljs-string">"id2"</span>&gt;
+  &lt;<span class="hljs-keyword">input</span> <span class="hljs-keyword">type</span>=<span class="hljs-string">"checkbox"</span> value=<span class="hljs-string">"class X"</span> name=<span class="hljs-string">"class"</span> id=<span class="hljs-string">"id2"</span>&gt;
+&lt;/<span class="hljs-keyword">label</span>&gt;
+</code></pre>
+<h3 id="textarea">Textarea</h3>
+<p>A multi-line text input control (text area):</p>
+<pre><code class="lang-html">&lt;textarea <span class="hljs-built_in">name</span>=<span class="hljs-string">"feedback"</span> <span class="hljs-built_in">id</span>=<span class="hljs-string">"feedback"</span> placeholder=<span class="hljs-string">"Please add Feedback"</span>&gt;
+
+&lt;/textarea&gt;
+</code></pre>
+<h3 id="select-tag">Select Tag</h3>
+<p>The <code>&lt;select&gt;</code> element is used to create a drop-down list.
+The <code>&lt;select&gt;</code> element is most often used in a form, to collect user input.</p>
+<pre><code class="lang-html">&lt;select name=<span class="hljs-string">"city"</span> id=<span class="hljs-string">"city"</span>&gt;
+  &lt;<span class="hljs-keyword">option</span> <span class="hljs-keyword">value</span>=<span class="hljs-string">"Delhi"</span>&gt; Delhi &lt;/<span class="hljs-keyword">option</span>&gt;
+  &lt;<span class="hljs-keyword">option</span> <span class="hljs-keyword">value</span>=<span class="hljs-string">"Mumbai"</span>&gt; Delhi &lt;/<span class="hljs-keyword">option</span>&gt;
+  &lt;<span class="hljs-keyword">option</span> <span class="hljs-keyword">value</span>=<span class="hljs-string">"Bangalore"</span>&gt; Delhi &lt;/<span class="hljs-keyword">option</span>&gt;
+&lt;/select&gt;
+</code></pre>
+<h3 id="implement-a-proper-form">Implement A Proper Form</h3>
+<pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"en"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"UTF-8"</span> /&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">"X-UA-Compatible"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"IE=edge"</span> /&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"viewport"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"width=device-width, initial-scale=1.0"</span> /&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Document<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">h4</span>&gt;</span>Registration Form<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">action</span>=<span class="hljs-string">"/action.php"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"username"</span> /&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"password"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"password"</span> /&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">h5</span>&gt;</span>Select your class<span class="hljs-tag">&lt;/<span class="hljs-name">h5</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"101"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"radio"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"class XI"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"class"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"101"</span> /&gt;</span>class XI
+  <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"102"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"radio"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"class XII"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"class"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"102"</span> /&gt;</span>class XII
+  <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">h5</span>&gt;</span>Select Fav Subjects<span class="hljs-tag">&lt;/<span class="hljs-name">h5</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"math"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"checkbox"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"math"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"subject"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"101"</span> /&gt;</span> Math
+  <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"phy"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"checkbox"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"phy"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"subject"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"102"</span> /&gt;</span> Physics
+  <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"chem"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"checkbox"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"chem"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"subject"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"103"</span> /&gt;</span> Chemistry
+  <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"CS"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"checkbox"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"CS"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"subject"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"104"</span> /&gt;</span> Computer
+    Science
+  <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span>
+  Select your city
+  <span class="hljs-tag">&lt;<span class="hljs-name">select</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"city"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"Delhi"</span>&gt;</span>Delhi<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"Banglore"</span>&gt;</span>Banglore<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"Pune"</span>&gt;</span>Pune<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"Mumbai"</span>&gt;</span>Mumbai<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">textarea</span>
+          <span class="hljs-attr">name</span>=<span class="hljs-string">"feedback"</span>
+          <span class="hljs-attr">id</span>=<span class="hljs-string">"101"</span>
+          <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"please give your valuable feedback here"</span>
+          <span class="hljs-attr">rows</span>=<span class="hljs-string">"5"</span>
+  &gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">textarea</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"submit"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"submit"</span> /&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<article>
+  <header>Form Example</header>
+  <h4>Registration Form</h4>
+<form action="/action.php">
+  <input type="text" placeholder="username" />
+  <br />
+  <br />
+  <input type="password" placeholder="password" />
+  <br /><br />
+  <h5>Select your class</h5>
+  <label for="101">
+    <input type="radio" value="class XI" name="class" id="101" />class XI
+  </label>
+  <br /><br />
+  <label for="102">
+    <input type="radio" value="class XII" name="class" id="102" />class XII
+  </label>
+  <br /><br />
+  <h5>Select Fav Subjects</h5>
+  <label for="math">
+    <input type="checkbox" value="math" name="subject" id="101" /> Math
+  </label>
+  <br /><br />
+  <label for="phy">
+    <input type="checkbox" value="phy" name="subject" id="102" /> Physics
+  </label>
+  <br /><br />
+  <label for="chem">
+    <input type="checkbox" value="chem" name="subject" id="103" /> Chemistry
+  </label>
+  <br /><br />
+  <label for="CS">
+    <input type="checkbox" value="CS" name="subject" id="104" /> Computer
+    Science
+  </label>
+  <br /><br />
+  Select your city
+  <select name="city">
+    <option value="Delhi">Delhi</option>
+    <option value="Banglore">Banglore</option>
+    <option value="Pune">Pune</option>
+    <option value="Mumbai">Mumbai</option>
+  </select>
+  <br /><br />
+  <textarea
+          name="feedback"
+          id="101"
+          placeholder="please give your valuable feedback here"
+          rows="5"
+  ></textarea>
+  <br />
+  <input type="submit" value="submit" />
+</form>
+</article>
+<script src="js/script.js"></script>
+</body>
+</html>
